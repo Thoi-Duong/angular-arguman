@@ -1,0 +1,6 @@
+<h1> Topics </h1>
+<ul class="argumans">
+  <li *ngFor="let arguman of argumans" (click)="onSelect(arguman)">
+     <span class="badge {{arguman.type}}">{{arguman.type}}</span> {{arguman.content}}
+  </li>
+</ul>
