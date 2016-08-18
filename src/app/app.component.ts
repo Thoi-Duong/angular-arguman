@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component }           from '@angular/core';
+import './rxjs-extensions';
 
 @Component({
   moduleId: module.id,
@@ -7,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrls: ['app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';
+  topic = 'có nên ăn thịt chó hay không ?';
+  goBack() {
+    window.history.back();
+  }
 }

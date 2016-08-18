@@ -1,0 +1,8 @@
+  <ul class="argumans">
+    <li *ngFor="let arguman of argumans" (click)="gotoArguman(arguman)">
+      <div *ngIf="arguman" >
+        <span class="badge {{arguman.type}}">{{arguman.type}}</span> {{arguman.content}}
+       </div>
+    </li>
+  </ul>
+
