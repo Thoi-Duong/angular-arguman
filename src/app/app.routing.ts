@@ -1,6 +1,6 @@
 import { Routes, RouterModule } from '@angular/router';
 
-import { ArgumansComponent } from './argumans.component';
+import { ArgumansComponent }    from './argumans.component';
 
 const appRoutes: Routes = [
   {

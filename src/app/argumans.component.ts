@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input }       from '@angular/core';
 import { ActivatedRoute, Params, Router } from '@angular/router';
-import {Arguman} from './arguman';
-import { ArgumanService }  from './arguman.service';
+import {Arguman}                          from './arguman';
+import { ArgumanService }                 from './arguman.service';
+
 @Component({
   selector: 'app-argumans',
   styleUrls: ['app/argumans.component.css'],
@@ -9,6 +10,8 @@ import { ArgumanService }  from './arguman.service';
 })
 export class ArgumansComponent implements OnInit {
   argumans: Arguman[];
+  @Input()
+  arguman: Arguman;
   constructor( private argumanService: ArgumanService, private route: ActivatedRoute, private router: Router) {
   }
   ngOnInit() {

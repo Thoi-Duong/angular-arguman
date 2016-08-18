@@ -1,9 +1,9 @@
-import { NgModule }      from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { routing }       from './app.routing';
-import { AppComponent }  from './app.component';
+import { NgModule }           from '@angular/core';
+import { BrowserModule }      from '@angular/platform-browser';
+import { routing }            from './app.routing';
+import { AppComponent }       from './app.component';
 import { ArgumansComponent }  from './argumans.component';
-import { ArgumanService }  from './arguman.service';
+import { ArgumanService }     from './arguman.service';
 @NgModule({
   imports: [ BrowserModule, routing ],
   declarations: [ ArgumansComponent, AppComponent ],

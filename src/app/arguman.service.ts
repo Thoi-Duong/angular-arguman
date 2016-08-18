@@ -1,8 +1,10 @@
-import { Injectable } from '@angular/core';
+import { Injectable }   from '@angular/core';
 import { ARGUMANS }     from './mock-argumans';
-import { Arguman } from './arguman';
+import { Arguman }      from './arguman';
 import 'rxjs/add/operator/toPromise';
+
 @Injectable()
+
 export class ArgumanService {
   getArgumans(id: number) {
     console.log('Arguman id::: '+id);
