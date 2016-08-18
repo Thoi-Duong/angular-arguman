@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import './rxjs-extensions';
 @Component({
   moduleId: module.id,
   selector: 'app-root',
@@ -7,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   topic = 'có nên ăn thịt chó hay không ?';
+  goBack() {
+    window.history.back();
+  }
 }
